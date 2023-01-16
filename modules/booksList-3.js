@@ -93,6 +93,7 @@ export class AwsomeBooks {
 
 let retDataTemp = [];
 
+
 if (localStorage.bookListStorage !== undefined) {
   retDataTemp = JSON.parse(localStorage.bookListStorage);
 }
