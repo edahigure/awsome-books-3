@@ -21,7 +21,7 @@ export class AwsomeBooks {
     }
   }
 
-  changeColor() {
+  changeColor = () => {
     for (let i = 0; i < this.booksListArr.length; i += 1) {
       const bgColor = document.querySelector(`.item-${this.booksListArr[i].id}`);
       if (i % 2 === 0) {
@@ -32,7 +32,7 @@ export class AwsomeBooks {
     }
   }
 
-  displayBooks() {
+  displayBooks = () => {
     this.newBook.innerHTML = this.booksListArr
       .map(
         (x) => `
@@ -46,7 +46,7 @@ export class AwsomeBooks {
     this.changeColor();
   }
 
-  addBook() {
+  addBook = () => {
     const bookTitle = document.querySelector('.title').value;
     const bookAuthor = document.querySelector('.author').value;
 
@@ -61,7 +61,7 @@ export class AwsomeBooks {
     newItem.className = `item-${this.id}`;
     newItem.innerHTML = `
 
-      <p>Title: ${bookTitle} by:${bookAuthor}</p>      
+      <p>${bookTitle} by:${bookAuthor}</p>      
       <input type = "button" class = "remove-button" id='button-item-${this.id}' value="remove">  
      
       
@@ -77,7 +77,7 @@ export class AwsomeBooks {
     this.changeColor();
   }
 
-  removeBook(itemId) {
+  removeBook = (itemId) => {
     const id = itemId.split('-')[2];
     const result = this.booksListArr.filter((item) => item.id !== Number(id));
     this.booksListArr = result;

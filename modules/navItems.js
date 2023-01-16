@@ -6,7 +6,8 @@ const colorCon = document.querySelector('#colorCon');
 const colorAdd = document.querySelector('#colorAdd');
 const colorBooks = document.querySelector('#colorBooks');
 
-export function initData(){
+const initData = () => {
+
     
     colorCon.addEventListener('click', showContact);
     colorAdd.addEventListener('click', showAddBook);
@@ -14,8 +15,10 @@ export function initData(){
         
 }
 
+export {initData};
 
-function showContact() {
+
+const showContact = () => {
   contact.style.display = 'flex';
   addBook.style.display = 'none';
   bookList.style.display = 'none';
@@ -24,7 +27,7 @@ function showContact() {
   colorBooks.style.color = 'black';
 }
 
-function showAddBook() {
+const showAddBook = () => {
   contact.style.display = 'none';
   addBook.style.display = 'flex';
   bookList.style.display = 'none';
@@ -34,7 +37,7 @@ function showAddBook() {
 }
 
 
-function showBooks() {
+const showBooks = () => {
   contact.style.display = 'none';
   addBook.style.display = 'none';
   bookList.style.display = 'flex';
