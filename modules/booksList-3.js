@@ -2,14 +2,12 @@ export class AwsomeBooks {
   booksListArr;
 
   constructor(booksListArr) {
-    
-    this.booksListArr = booksListArr;    //initial array from the local storage
-    console.log(booksListArr);
-    if(booksListArr.length - 1>0) {
-      this.id = booksListArr[booksListArr.length - 1].id;  // last id recorded in the local storage        
-    }else {
+    this.booksListArr = booksListArr; // initial array from the local storage
+    if (booksListArr.length - 1 > 0) {
+      this.id = booksListArr[booksListArr.length - 1].id; // last id recorded in the local storage
+    } else {
       this.id = 0;
-    }            
+    }
 
     this.newBook = document.querySelector('.booksList');
     this.displayBooks();
@@ -93,10 +91,8 @@ export class AwsomeBooks {
 
 let retDataTemp = [];
 
-
 if (localStorage.bookListStorage !== undefined) {
   retDataTemp = JSON.parse(localStorage.bookListStorage);
 }
 
 export const retData = retDataTemp;
-
