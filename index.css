@@ -1,118 +1,116 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .input-section {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  
-  button {
-    width: max-content;
-    margin: 10px;
-    background-color: transparent;
-    border: none;
-  }
-  
-  .booksList {
-    display: none;
-    border: 2px solid black;
-    width: 50vw;
-    flex-direction: column;
-  }
-  
-  input {
-    margin: 5px;
-  }
-  
-  [class^="item"] {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10px;
-  }
-  
-  /* [class^="item"]:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+button {
+  width: max-content;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.booksList {
+  display: none;
+  border: 2px solid black;
+  width: 50vw;
+  flex-direction: column;
+}
+
+input {
+  margin: 5px;
+}
+
+[class^="item"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+/* [class^="item"]:nth-of-type(2) {
     background-color: white;
   }
-  
+
   [class^="item"]:nth-of-type(4) {
     background-color: white;
   } */
-  
-  .title,
-  .author {
-    border: 2px solid black;
-  }
-  
-  .remove-button {
-    height: 25px;
-    margin-right: 10px;
-    background-color: white;
-    filter: drop-shadow(5px 3px 1px #000);
-  }
-  
-  #add-button {
-    height: 25px;
-    margin-right: 10px;
-    background-color: white;
-    filter: drop-shadow(5px 3px 1px #000);
-  }
-  
-  .navBar {
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid black;
-    padding: 12px;
-  }
-  
-  #navItems {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 5px;
-    align-items: center;
-  }
-  
-  .listItem {
-    margin: 5px;
-  }
-  
-  #contact {
-    display: none;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  footer {
-    width: 50vw;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-start;
-    border: 2px solid black;
-  }
-  
-  #copyright {
-    margin: 5px;
-  }
 
-  .navBar {
-    display: flex;
-    width: 90%;
-  }
+.title,
+.author {
+  border: 2px solid black;
+}
 
-  .myDate {
-    flex: 1;
-  }
+.remove-button {
+  height: 25px;
+  margin-right: 10px;
+  background-color: white;
+  filter: drop-shadow(5px 3px 1px #000);
+}
+
+#add-button {
+  height: 25px;
+  margin-right: 10px;
+  background-color: white;
+  filter: drop-shadow(5px 3px 1px #000);
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding-left: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#navItems {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 5px;
+  align-items: center;
+}
+
+.listItem {
+  margin: 5px;
+  border-right-style: solid;
+}
+
+#contact {
+  display: none;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 50vw;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  border: 2px solid black;
+}
+
+#copyright {
+  margin: 5px;
+}
+
+.myDate {
+  flex: 1;
+}
