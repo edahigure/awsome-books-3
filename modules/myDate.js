@@ -8,8 +8,8 @@ const getDate = () => {
   newItem.className = 'myDate';
   newItem.innerHTML = `
            ${timeNow}
-          `;
-  navBar.appendChild(newItem);
+          `;  
+  navBar.parentNode.insertBefore(newItem, navBar.nextSibling);
 };
 
 export { getDate as default };
